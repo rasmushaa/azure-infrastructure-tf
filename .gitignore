@@ -1,0 +1,37 @@
+# Terraform working directories
+**/.terraform/*
+
+# Terraform state can contain credentials and private resource attributes
+*.tfstate
+*.tfstate.*
+
+# Local variable and backend configuration
+*.tfvars
+*.tfvars.json
+*.tfbackend
+*.tfbackend.json
+
+# Terraform plans and crash logs
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+
+# Local Terraform CLI configuration
+.terraformrc
+terraform.rc
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Terraform override files are intended to remain local
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# macOS metadata
+.DS_Store
+

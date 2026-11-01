@@ -1,0 +1,16 @@
+# Copy this file to terraform.tfvars, then replace every placeholder.
+# terraform.tfvars is ignored and must never be committed.
+
+subscription_id = "<your-subscription-id>"
+
+notification_emails = [
+  "you@example.com",
+]
+
+# Amount is in the subscription's billing currency.
+budget_amount = 20
+
+# Use the first day of the current month in UTC.
+# On macOS, this command prints the correct shape: date -u +%Y-%m-01T00:00:00Z
+budget_start_date = "YYYY-MM-01T00:00:00Z"
+

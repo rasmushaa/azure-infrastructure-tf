@@ -1,0 +1,10 @@
+# Copy this file to terraform.tfvars, then replace both placeholders.
+# This ignored file contains only private Azure identifiers.
+
+subscription_id = "<your-subscription-id>"
+
+# Private Microsoft Entra object ID for the user who owns and administers the
+# project resource group.
+# Find it with: az ad signed-in-user show --query id --output tsv
+owner_principal_id = "<your-entra-user-object-id>"
+
